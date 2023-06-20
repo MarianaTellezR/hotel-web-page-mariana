@@ -1,0 +1,451 @@
+/*
+font-family: 'Amiri', serif;
+font-family: 'Bitter', serif;
+font-family: 'Kaisei Opti', serif;
+font-family: 'Parisienne', cursive;
+font-family: 'Quicksand', sans-serif;
+*/
+
+.header-top {
+    background-color: #B2C8DF;
+    
+}
+
+.header-top p {
+    color: white;
+    font-family: 'Quicksand', sans-serif;
+    text-align: center;
+    margin-bottom: 0px;
+}
+
+.header-bottom {
+    background-color: #6E85B7;
+}
+
+.display-menu {
+    margin:10px;
+    font-family: 'Quicksand', sans-serif;
+    text-align: center;
+    padding-top: 4%;
+}
+
+.logo-menu {
+    text-align: center;
+}
+
+.logo-icon {
+    height: 55%;
+    width: 55%;
+    object-fit: contain;
+}
+
+.account-icon{
+    text-align: center;
+}
+
+.account-ingreso {
+    height: 20%;
+    width: 20%;
+    object-fit: contain;
+    padding-top: 6%;
+    padding-bottom: 6%;
+    
+}
+
+body {
+    background-color: #F3EAE0;
+}
+
+h1 {
+    font-family: 'Parisienne', cursive;
+    color: #748DA6;
+    padding-left: 30px;
+    padding-top: 30px;
+    padding-bottom: 15px;
+
+}
+
+p {
+    color: #748DA6;
+    font-family: 'Quicksand', sans-serif;
+    padding-left: 40px;
+}
+
+footer p {
+    color: white;
+    font-family: 'Amiri', serif;
+    padding-left:1px;
+}
+
+.columna-amenidad {
+    text-align: center;
+}
+
+.carusel-instalaciones {
+    text-align: center;
+}
+
+.populares {
+    text-align: center;
+}
+
+.populares p {
+    font-family: 'Kaisei Opti', serif;
+    color: #748DA6;
+    font-size: large;
+}
+.populares img {
+    
+    height: 60%;
+    width: 60%;
+    object-fit: contain;
+    
+}
+
+.all-rooms {
+    text-align: center;
+}
+
+.all-rooms p {
+    font-family: 'Kaisei Opti', serif;
+    color: #748DA6;
+    font-size: large;
+}
+
+.all-rooms img {
+    
+    height: 60%;
+    width: 60%;
+    object-fit: contain;
+    
+}
+
+
+.habitacion-data h3{
+    color:#6E85B7;
+    font-family: 'Kaisei Opti', serif;
+    padding-left: 100px;
+    padding-top: 25px;
+
+}
+
+.habitacion-data h4{
+    color:#979391;
+    font-family: 'Quicksand', sans-serif;
+    padding-left: 100px;
+    padding-top: 30px;
+
+}
+
+.descripcion-hotel p{
+    padding-left: 40px;
+    padding-right: 35px;
+    text-align: justify;
+    font-family: 'Kaisei Opti', serif;
+    color: #748DA6;
+
+}
+
+.mapa-hotel {
+    text-align: center;
+}
+
+.mapa-hotel img {
+    height: 90%;
+    width: 90%;
+    object-fit: contain;
+}
+
+.fotografias-ins img{
+    height: 90%;
+    width: 90%;
+    object-fit: contain;
+}
+
+.columna1 {
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.columna2 {
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.columna3 {
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.boton-info {
+    border: 1px solid #F7A7A7;
+    padding: 10px; /*espacio alrededor texto*/
+    background-color: #F7A7A7; /*color botón*/
+    color: white;
+    text-decoration: none; /*decoración texto*/
+    font-family: 'Bitter', serif;
+    border-radius: 10px; /*bordes redondos*/
+}
+
+.boton-info:hover {
+    color: #6E85B7;
+}
+
+.regresar {
+    text-align:center;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+.back {
+    border: 1px solid #F7A7A7;
+    padding: 10px; /*espacio alrededor texto*/
+    background-color: #F7A7A7; /*color botón*/
+    color: white;
+    text-decoration: none; /*decoración texto*/
+    font-family: 'Bitter', serif;
+    border-radius: 10px; /*bordes redondos*/
+}
+
+.back:hover{
+    color: #6E85B7;
+}
+
+.mayor-info-rooms {
+    text-align:center;
+    padding-bottom: 20px;
+}
+
+.mas-rooms {
+    border: 1px solid #F7A7A7;
+    padding: 10px; /*espacio alrededor texto*/
+    background-color: #F7A7A7; /*color botón*/
+    color: white;
+    text-decoration: none; /*decoración texto*/
+    font-family: 'Bitter', serif;
+    border-radius: 10px; /*bordes redondos*/
+}
+
+.mas-rooms:hover{
+    color: #6E85B7;
+}
+
+
+.footer-top {
+    background-color: #6E85B7;
+    font-family: 'Amiri', serif;
+    color: white;
+}
+
+.logo-footer {
+    padding-left: 10px;
+    text-align: center;
+    padding-top: 15px;
+}
+
+.logo-iconf {
+    height: 55%;
+    width: 55%;
+    object-fit: contain;
+}
+
+.texto-contacto {
+    text-align: center;
+    padding-top: 25px;
+    font-size: x-large;
+}
+
+.datoscontacto {
+    text-align: center;
+    padding-top: 15px;
+    
+}
+
+.datoscontacto li{
+    list-style: none;
+}
+
+.datoscontacto img {
+    height: 20px;
+    width: 20px;
+}
+
+.footer-top {
+    color: white;
+}
+.footer-bottom {
+    background-color: #B2C8DF;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.footer-bottom img {
+    height: 30px;
+    width: 30px;
+}
+
+/*Clima*/
+
+.climate {
+    text-align: center;
+    font-family: 'Kaisei Opti', serif;
+    color: #748DA6;
+    
+}
+
+#searchbox{
+    text-align: center;
+    font-family: 'Kaisei Opti', serif;
+    border: 1px solid rgb(120, 115, 115);
+    border-radius: 10px;
+    padding-left: 100px;
+    padding-right: 100px;
+    
+    
+}
+
+/*Bebidas y cocteles*/
+
+.container {
+    
+    width: 90vw;
+    max-width: 37.5em;
+    background-color: #ffffff;
+    padding: 1.8em;
+    border-radius: 0.6em;
+    box-shadow: 0 1em 3em rgba(2, 9, 38, 0.25);
+  }
+
+  .search-container {
+    display: grid;
+    grid-template-columns: 9fr 3fr;
+    gap: 1em;
+    margin-bottom: 1.2em;
+    
+  }
+
+  .search-container input {
+    font-size: 1em;
+    padding: 0.6em 0.3em;
+    border: 1px solid rgb(120, 115, 115);
+    outline: none;
+    color: #748DA6;
+    border-bottom: 1.5px solid #748DA6;
+    border-radius: 10px;
+    font-family: 'Quicksand', sans-serif;
+  }
+  .search-container input:focus {
+    border-color: #748DA6;
+  }
+  .search-container button {
+    font-size: 1em;
+    border-radius: 2em;
+    background-color: #F7A7A7;
+    border: none;
+    outline: none;
+    color: #ffffff;
+    cursor: pointer;
+    font-family: 'Quicksand', sans-serif;
+  }
+  #result {
+    color: #6E85B7;
+    line-height: 2em;
+    font-family: 'Quicksand', sans-serif;
+  }
+  #result img {
+    display: block;
+    max-width: 12.5em;
+    margin: auto;
+  }
+  #result h2 {
+    font-size: 1.25em;
+    margin: 0.8em 0 1.6em 0;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    color: #85b2e0;
+    position: relative;
+    font-family: 'Quicksand', sans-serif;
+  }
+  #result h2:before {
+    content: "";
+    position: absolute;
+    width: 15%;
+    height: 3px;
+    background-color: #F7A7A7;
+    left: 42.5%;
+    bottom: -0.3em;
+    font-family: 'Quicksand', sans-serif;
+  }
+  #result h3 {
+    font-size: 1.1em;
+    font-weight: 600;
+    margin-bottom: 0.2em;
+    color: #6E85B7;
+    font-family: 'Quicksand', sans-serif;
+  }
+  #result ul {
+    margin-bottom: 1em;
+    margin-left: 1.8em;
+    display: grid;
+    grid-template-columns: auto auto;
+    font-family: 'Quicksand', sans-serif;
+  }
+  #result li {
+    margin-bottom: 0.3em;
+  }
+  #result p {
+    text-align: justify;
+    font-weight: 400;
+    font-size: 0.95em;
+    font-family: 'Quicksand', sans-serif;
+  }
+  .msg {
+    text-align: center;
+  }
+  @media screen and (max-width: 600px) {
+    .container {
+      font-size: 14px;
+    }
+  }
+
+  /*Inicio de Sesion*/
+
+.inicio-sesion h3 {
+    color: #748DA6;
+    font-family: 'Quicksand', sans-serif;
+    text-align: center;
+    padding: 20px;
+    
+}
+
+.inicio-sesion {
+    color:#748DA6;
+    font-family: 'Kaisei Opti', serif;
+}
+
+/*Comentarios*/
+
+.comentarios {
+    font-family: 'Quicksand', sans-serif;
+    color:#6E85B7;
+    text-align: justify;
+}
+
+.comentarios ul {
+    list-style: none;
+    text-align: justify;
+    padding-right: 30px;
+    line-height: 2
+}
+
+.container-com{
+    border: 1px solid white;
+    margin-left: 50px;
+    margin-right: 50px;
+    padding: 20px;
+    background-color: #ffffff;
+    
+}

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <title>Beyond the Sea</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <!--Link Bootstrap 5.2.0-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+    <!--Logo en Miniatura-->
+    <link rel="icon" href="../img/LogoBeyond.png">
+    <!--CSS Main-->
+    <link rel="stylesheet" href="../css/main.css">
+    <!--Ligas Fuentes de Google-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amiri&family=Bitter&family=Kaisei+Opti&family=Parisienne&family=Quicksand&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <header class="header">
+        <!--Barra superior-->
+        <section class="header-top">
+            <div class="row">
+                <div class="col-sm-12">
+                    <p>Descuento del 25% en habitaciones</p>
+                </div>
+            </div>
+        </section>
+        <!--Menu de navegacion-->
+        <section class="header-bottom">
+            <div class="row"> 
+                <!--Barra menu-->
+
+                <article class="col-lg-3 col-md-4 col-sm-12">
+                    <div class="display-menu">
+                        <div class="dropdown">
+                            <button class="btn btn-light dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              Menú
+                            </button>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="index.html">Inicio</a></li>
+                              <li><a class="dropdown-item" href="habitaciones.html">Habitaciones</a></li>
+                              <li><a class="dropdown-item" href="clima.html">Clima</a></li>
+                              <li><a class="dropdown-item" href="bebidas.html">Bebidas</a></li>
+                              <li><a class="dropdown-item" href="ingresar.html">Inicio de Sesion o Registro</a></li>
+                              <li><a class="dropdown-item" href="contacto.html">Conócenos</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="col-lg-6 col-md-4 col-sm-12">
+                    <div class="logo-menu">
+                        <a href="index.html"><img class="logo-icon" src="../img/BeyondTheSeaLogo.png" ></a>
+                    </div>
+                </article>
+
+                <article class="col-lg-3 col-md-4 col-sm-12">
+                    <div class="account-icon">
+                        <a href="ingresar.html"><img class="account-ingreso" src="../img/ingreso-icon.png" ></a>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+        
+    </header>
+
+    <h1>Clima</h1>
+    <p> En esta sección puedes buscar el clima por ciudad, donde te daremos los datos actualizados.</p>
+    <div class="container">
+    <section class="climate">
+        <input placeholder="Ingresa una ciudad" type="text" id="searchbox" />
+
+        <p></p>
+        <h2 id="city"></h2>
+        <p></p>
+        <h3 id="temp"></h3>
+        <span id="min_max_temp"></span>
+        <p></p>
+        <h4 id="weather"></h4>
+        <p id="weather_desc"></p>
+        <span id="wind_dir_speed"></span>
+
+        <script type="text/javascript">
+            var searchValue = document.querySelector('#searchbox');
+            searchValue.addEventListener('keypress', setFunc);
+            function setFunc(e) {
+                if(e.keyCode == 13) {
+                   getData(searchValue.value);
+                }
+            }
+            function getData(value) {
+                fetch('https://api.openweathermap.org/data/2.5/weather?q=' +value+ '&appid=d1b73b9f0676715bbd0cc493b72eb781&units=metric')
+                .then(function(response) {
+                    return response.json();
+                })
+                .then(function (weather) {
+                    document.querySelector('#city').innerHTML = weather.name;
+                    document.querySelector('#temp').innerHTML = weather.main.temp + " °C";
+                    document.querySelector('#min_max_temp').innerHTML =
+                    "Min. " + weather.main.temp_min + " °C / Max. " + weather.main.temp_max + " °C";
+                    document.querySelector('#weather').innerHTML = weather.weather[0].main;
+                    document.querySelector('#weather_desc').innerHTML = weather.weather[0].description;
+                    document.querySelector('#wind_dir_speed').innerHTML = "Wind direction: "+weather.wind.deg+" / Wind Speed: " + weather.wind.speed;
+                })
+                .catch(function (err) {
+                    console.log(err);
+                });
+            }
+
+        </script>
+
+    </section>
+    </div>
+    
+
+    <section class="regresar">
+        <div class="row">
+            <article class="col-sm-12">
+                <p><a href="index.html" class="back">Regresar</a></p>
+            </article>
+        </div>
+    </section>
+    
+    <footer>
+        <section class="footer-top">
+            <div class="row"> 
+                <!--Barra abajo-->
+
+                <article class="col-lg-4 col-md-4 col-sm-12">
+                    <div class="logo-footer">
+                        <a href="index.html"><img class="logo-iconf" src="../img/BeyondTheSeaLogo.png" ></a>
+                    </div>
+                </article>
+
+                <article class="col-lg-4 col-md-4 col-sm-12 ">
+                    <div class="texto-contacto">
+                        <p>Contacto</p>
+                    </div>
+                </article>
+
+                <article class="col-lg-4 col-md-4 col-sm-12">
+                    <div class="datoscontacto">
+                        <ul>
+                            <li><a href="contacto.html"><img src="../img/telephone.png" ></a><p>+ 55 5555 5555</p></li>
+                            <li><a href="contacto.html"><img src="../img/email.png" ></a><p>beyondthesea@gmail.com</p></li>
+                        </ul>
+
+                    </div>
+                </article>
+
+            </div>
+        </section>
+        <!--Barra Redes sociales-->
+        <section class="footer-bottom">
+            <div class="row">
+                <div class="col-sm-12">
+                    <a href="https://www.facebook.com/"><img class="face" src="../img/facebook.png"></a>
+                    <a href="https://twitter.com/"><img class="tweet" src="../img/twitter.png"></a>
+                    <a href="https://www.instagram.com/"><img class="insta" src="../img/instagram.png"></a>
+                </div>
+            </div>
+        </section>
+    </footer>
+</body>
+</html>
